@@ -1,0 +1,17 @@
+version: '3'
+services:
+  user-service:
+    # blue env (live version)
+    image: 221082206524.dkr.ecr.eu-north-1.amazonaws.com/user-service-repo:latest
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+
+  user-service-green:
+    # green env (test version)
+    image: 221082206524.dkr.ecr.eu-north-1.amazonaws.com/user-service-repo:latest
+    ports:
+      - "3002:3001"
+    environment:
+      - NODE_ENV=production
