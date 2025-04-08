@@ -2,7 +2,7 @@ version: '3'
 services:
   user-service:
     # blue env (live version)
-    image: 221082206524.dkr.ecr.eu-north-1.amazonaws.com/user-service-repo:latest
+    image: 221082206524.dkr.ecr.eu-north-1.amazonaws.com/user_web-repo:latest
     ports:
       - "3001:3001"
     environment:
